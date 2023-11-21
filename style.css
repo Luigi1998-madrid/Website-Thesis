@@ -1,0 +1,54 @@
+
+header{
+	width: 100%;
+	height: 10vh;
+	background: #9F9F9F;
+	border: 2px solid black;
+	border-radius: 15px;
+	display: grid;
+	grid-template-columns: 15% 1fr 25%;
+	overflow: hidden;
+
+}
+
+img{
+	width: 40px;
+	aspect-ratio: 1/1;
+}
+
+#logo{
+	background: green;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#name{
+	background: white;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+#login{
+	background: red;
+	width: 100%;
+}
+
+.logo_inv{
+	margin: 0px;
+	width: 100px;
+	aspect-ratio: 2/1;
+}
+
+h1#Titolo{
+	color: black;
+	font-size: 30px;
+	font-weight: bolder;
+	font-family: 'Times New Roman';
+	text-justify: center;
+}
