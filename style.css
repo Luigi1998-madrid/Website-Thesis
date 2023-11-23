@@ -1,14 +1,16 @@
 
+body{
+	overflow: hidden;
+
+}
 header{
 	width: 100%;
 	height: 10vh;
 	background: #9F9F9F;
-	border: 2px solid black;
-	border-radius: 15px;
 	display: grid;
-	grid-template-columns: 15% 1fr 25%;
+	grid-template-columns: 15% 1fr 20%;
 	overflow: hidden;
-
+	border-radius: 15px;
 }
 
 img{
@@ -17,7 +19,7 @@ img{
 }
 
 #logo{
-	background: green;
+	background: skyblue;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -26,7 +28,7 @@ img{
 }
 
 #name{
-	background: white;
+	background: skyblue;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -35,9 +37,37 @@ img{
 }
 
 #login{
-	background: red;
+	background: skyblue;
 	width: 100%;
+	display: grid;
+	place-items: center;
+
 }
+
+form{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+
+}
+
+.btn_header{
+	width: 40%;
+	height: 10%;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 4px;
+	padding: 4px;
+
+}
+
+.btn_header:hover{
+	background-color: gray;
+
+}
+
 
 .logo_inv{
 	margin: 0px;
@@ -51,28 +81,56 @@ h1#Titolo{
 	font-weight: bolder;
 	font-family: 'Times New Roman';
 	text-justify: center;
+
 }
+
 div#canvas{
-	background: url(img/FotoPonte.jpeg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
 	height: 80vh;
-	width: 100%;
 	display: grid;
-	grid-template-columns: 150px 1fr;
-	
+	grid-template-columns: 150px  1fr;
+	border-radius: 15px;
+
 }
+
 
 aside{
-	background: blue;
-	height: 80vh;
-	width: 100%;
+	background: skyblue;
+	height: 78vh;
+	display: flex;
+	flex-direction: column;
+	padding: 4px;
+	margin: 4px;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 15px;
+
+}
+
+
+.btn_aside{
+	width: 90%;
+	height: 10%;
+	background-color: blue;
+	border-radius: 15px;
+
+}
+
+.btn_aside:hover{
+
+	background-color: yellow;
 	
 }
 
+button{
+	color: black;
+	width: 90%;
+
+}
 content{
-	width: calc(100% - 150px);
-	margin: auto;
+	background: url(img/SfondoPlatform.PNG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 15px;
 
 }
 .pwbpanel{
@@ -82,13 +140,71 @@ content{
 }
 
 footer{
-	background: gray;
-	height: 7vh;
 	width: 100%;
-
-
+	height: 9vh;
+	background: #9F9F9F;
+	display: grid;
+	grid-template-columns: 15% 1fr 25%;
+	overflow: hidden;
+	border-radius: 15px;
+}
+#footer-sx{
+	background: skyblue;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	padding: 6px;
 }
 
+#footer-dx{
+	background: skyblue;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
 
+#Studente{
+	background: skyblue;
+	width: 100%;
+}
+
+h1#TitoloStudente{
+	color: black;
+	font-size: 30px;
+	font-weight: bolder;
+	font-family: 'Times New Roman';
+	text-align: center;
+
+}
+.img_loghi{
+	margin: 5px;
+	width: 80px;
+	height: 70%;
+	aspect-ratio: 3/1;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.img_log{
+	margin: 0px;
+	width: 80px;
+	height: 100%;
+	aspect-ratio: 2/1;
+	
+}
+
+#geoportal{
+	margin: 0px;
+	height: auto;
+	aspect-ratio: 6/1;
+	
+}
+
+#dashboard1{
+	display: none;
+}
 
 
