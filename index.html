@@ -35,18 +35,49 @@
 	</header>
 	<div id="canvas">
 		<aside>
-			<button id="btn1" class= "btn_aside" onclick="show()"> Report Fotografico </button>
-			<button class= "btn_aside"> Nuvola di Punti </button>
-			<button class= "btn_aside"> Modello Architettonico </button>
-			<button class= "btn_aside"> Modello Strutturale </button>
-			<button class= "btn_aside"> Setup Sistema di Monitoraggio </button>
-			<button class= "btn_aside"> System Alert </button>
+			<button id="btn1" class= "btn_aside" onclick="active_canvas(
+			'dashboard1')"> Report Fotografico </button>
+			<button class= "btn_aside" onclick="active_canvas(
+			'container1')"> Nuvola di Punti </button>
+			<button class= "btn_aside" onclick="active_canvas(
+			'container2')"> Modello Architettonico </button>
+			<button class= "btn_aside" onclick="active_canvas(
+			'container3')"> Modello Strutturale </button>
+			<button class= "btn_aside" onclick="active_canvas(
+			'container4')"> Setup Sistema di Monitoraggio </button>
+			<button class= "btn_aside" onclick="active_canvas(
+			'container5')"> System Alert </button>
 		</aside>
-		<content>
+
+		<content id="contnt">
 		
 
-		<iframe id="dashboard1"  title="Report Section" class="pwbpanel" src="https://app.powerbi.com/view?r=eyJrIjoiY2E3ZDNiYzQtNThjNy00YzI4LTkzYzQtMTYzMTBiYzk0MDBmIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+		<iframe id="dashboard1"  title="Report Section" class="pannello" src="https://app.powerbi.com/view?r=eyJrIjoiY2E3ZDNiYzQtNThjNy00YzI4LTkzYzQtMTYzMTBiYzk0MDBmIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
+		<div id="container1" class="pannello">
+			<a href="PDF/ticketdirect1229753442.pdf" target="blank">Ticket</a>
+
+		</div>
+
+		<div id="container2" class="pannello" >
+			
+
+		</div>
+
+		<div id="container3" class="pannello">
+			
+
+		</div>
+
+		<div id="container4" class="pannello">
+			
+
+		</div>
+
+		<div id="container5" class="pannello">
+			
+
+		</div>
 		</content>
 	</div>
 	<footer>

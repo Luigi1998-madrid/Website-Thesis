@@ -252,10 +252,30 @@ h1#TitoloStudente{
 }
 
 
-#dashboard1{
+.pannello{
 	display: none;
+	width: 100%;
+	height: 100%;
 }
 
 
+	#container1{
+	display: none;
+	}
 
+	#container2{
+	display: none;
+	}
+
+	#container3{
+	display: none;
+	}
+
+	#container4{
+	display: none;
+	}
+
+	#container5{
+	display: none;
+	}
 
