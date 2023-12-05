@@ -36,43 +36,70 @@
 	<div id="canvas">
 		<aside>
 			<button id="btn1" class= "btn_aside" onclick="active_canvas(
-			'dashboard1')"> Ispezione e Report Fotografico </button>
+			'ispezione')"> Ispezione e Report Fotografico </button>
 			<button class= "btn_aside" onclick="active_canvas(
-			'container1')"> Nuvola di Punti </button>
+			'nuvola')"> Nuvola di Punti </button>
 			<button class= "btn_aside" onclick="active_canvas(
-			'container2')"> Modello Architettonico </button>
+			'architettonico')"> Modello Architettonico </button>
 			<button class= "btn_aside" onclick="active_canvas(
-			'container3')"> Modello Strutturale </button>
+			'strutturale')"> Modello Strutturale </button>
 			<button class= "btn_aside" onclick="active_canvas(
-			'container4')"> Setup Sistema di Monitoraggio </button>
+			'setup')"> Setup Sistema di Monitoraggio </button>
 			<button class= "btn_aside" onclick="active_canvas(
-			'container5')"> System Alert </button>
+			'alert')"> System Alert </button>
 		</aside>
 
 		<content id="contnt">
 		
+			<div id="ispezione" class="pannello">
+				<aside id="aside2">
+					<button id="btn_aux1" class="btn_aux"><a href="img/ISPEZIONE/Bibliografiaponte.pdf" target="_blank">Descrizione Caso Studio</a></button>
+					<button id="btn_aux2" class="btn_aux" onclick="active_aux('immagini')">Immagini</button>
+				</aside> 
 
-		<iframe id="dashboard1"  title="Report Section" class="pannello" src="https://app.powerbi.com/view?r=eyJrIjoiY2E3ZDNiYzQtNThjNy00YzI4LTkzYzQtMTYzMTBiYzk0MDBmIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+				<div id="body2">
+				
+				<div id="descrizione" class="body2">
+					
+				</div>
 
-		<div id="container1" class="pannello">
-			<a href="PDF/ticketdirect1229753442.pdf" target="blank">Ticket</a>
+				<div id="immagini" class="body2">
 
-		</div>
+					<div class="foto_container">
+						<img class="immagini" src="img/ISPEZIONE/FOTO1.jpeg">
+					</div>
 
-		
+					<div class="foto_button">
+						<button class="btn_arrows">back</button>
+						<button class="btn_arrows">forward</button>
+					</div>
 
-		<iframe id="container2" class="pannello" title="Architectural Dashboard"  src="https://app.powerbi.com/view?r=eyJrIjoiMGY4M2ExMjAtYmNhYy00YjA0LWEyMjktMTdjMGZhMTVhN2ZhIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
-		
-		<iframe id="container3" class="pannello" title="Structural Dashboard"  src="https://app.powerbi.com/view?r=eyJrIjoiYzEzNjMzMmYtY2VhYS00MGE5LTljN2QtMDBjMzVmNjE4NDY0IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>		
+					
+				</div>
+						
+					</div>					
+				</div>	
+			</div>
 
-		
-
-		<div id="container4" class="pannello">
+		<div id="nuvola" class="pannello">
 			
 
 		</div>
 
-		<div id="container5" class="pannello">
+		
+
+		<iframe id="architettonico" class="pannello" title="Architectural Dashboard"  src="https://app.powerbi.com/view?r=eyJrIjoiMGY4M2ExMjAtYmNhYy00YjA0LWEyMjktMTdjMGZhMTVhN2ZhIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+		
+		<iframe id="strutturale" class="pannello" title="Structural Dashboard"  src="https://app.powerbi.com/view?r=eyJrIjoiYzEzNjMzMmYtY2VhYS00MGE5LTljN2QtMDBjMzVmNjE4NDY0IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>		
+
+		
+
+		<div id="setup" class="pannello">
+			
+
+		</div>
+
+		<div id="alert" class="pannello">
 			
 
 		</div>
