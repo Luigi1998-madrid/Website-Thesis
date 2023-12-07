@@ -65,12 +65,12 @@
 					<div id="immagini" class="body_third">
 
 						<div class="foto_container">
-							<img class="immagini" src="img/ISPEZIONE/FOTO1.jpeg">
+							<img id="img_ispezione" class="immagini_ispezione" src="img/ISPEZIONE/FOTO1.jpeg">
 						</div>
 
 						 <div class="foto_button">
-							<button class="btn_arrows">Back</button>
-							<button class="btn_arrows">Forward</button>
+							<button class="btn_arrows" onclick="back('img_ispezione')">Back</button>
+							<button class="btn_arrows" onclick="forward('img_ispezione')">Forward</button>
 						</div> 
  
 					</div>
@@ -87,9 +87,9 @@
 			<div id="nuvola" class="pannello">
 			
 					<aside id="aside6" class="aside_secondary">
-					<button id="btn_aux20" class="btn_aux "><a href="img/ISPEZIONE/Bibliografiaponte.pdf" target="_blank" class="btn_type_a">Descrizione Caso Studio</a></button>
+					<button id="btn_aux20" class="btn_aux "><a href="https://experience.arcgis.com/experience/5ee5d550d2134cc2973d1878438e6c74/page/P%C3%A1gina/?data_id=dataSource_1-187a4ff90ab-layer-66-1878b3fdea7-layer-62%3A69&dlg=Descargas" class="btn_type_a" target="_blank">GeoPortal</a></button>
 					 
-					<button id="btn_aux21" class="btn_aux" onclick="active_aux2('immagini2')">Immagini</button>
+					<button id="btn_aux21" class="btn_aux" onclick="active_aux2('immagini2')">Images</button>
 					</aside> 
 
 				 	<div id="body4" class="body_secondary">
@@ -97,12 +97,12 @@
 							<div id="immagini2" class="body_third">
 
 								<div class="foto_container">
-									<img class="immagini" src="img/ISPEZIONE/FOTO1.jpeg">
+									<img id="img_nuvola" class="immagini_nuvola" src="NUVOLA DI PUNTI/Nuvola1.jpeg">
 								</div>
 
 							 	<div class="foto_button">
-									<button class="btn_arrows">Back</button>
-									<button class="btn_arrows">Forward</button>
+									<button class="btn_arrows" onclick="back1('img_nuvola')">Back</button>
+									<button class="btn_arrows" onclick="forward1('img_nuvola')">Forward</button>
 								</div> 
    							</div>
 					</div>  
@@ -124,15 +124,15 @@
 
 			<iframe title="Strutturale PWBI" id="strutturale" class="pannello"  src="https://app.powerbi.com/view?r=eyJrIjoiYzEzNjMzMmYtY2VhYS00MGE5LTljN2QtMDBjMzVmNjE4NDY0IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
-			<div id="setup" class="pannello prueba" >
+			<div id="setup" class="pannello" >
 			
 				<aside id="aside3" class="aside_secondary">
 					 <button id="btn_aux3" class="btn_aux" onclick="active_aux1('sensori')">Sensori</button>
-					<button id="btn_aux4" class="btn_aux"><a href="img/SCHEDE TECNICHE DISPOSITIVI/Scheda Tecnica Accelerometro.pdf" target="_blank" class="btn_type_a">Scheda Tecnica Accelerometro</a></button>
-					<button id="btn_aux5" class="btn_aux">Scheda Tecnica Nodo Di comunicazione</button>
-					<button id="btn_aux6" class="btn_aux">Scheda Tecnica Estensimetro</button>
-					<button id="btn_aux7" class="btn_aux">Scheda Tecnica Gateway Esterno</button>
-					<button id="btn_aux8" class="btn_aux">Scheda Tecnica Inclinometro</button> 
+					<button id="btn_aux4" class="btn_aux"><a href="MONITORAGGIO/SCHEDE TECNICHE/Accelerometer-SHM-Datasheet-Move-Solutions.pdf" target="_blank" class="btn_type_a">Scheda Tecnica Accelerometro</a></button>
+					<button id="btn_aux5" class="btn_aux"><a href="MONITORAGGIO/SCHEDE TECNICHE/Analog-Node-Datasheet-Move-Solutions.pdf" target="_blank" class="btn_type_a">Scheda Tecnica Nodo Di comunicazione</a></button>
+					<button id="btn_aux6" class="btn_aux"><a href="MONITORAGGIO/SCHEDE TECNICHE/Boviar_scheda_Scheda_Estensimetri_Corda_Vibrante_ECV_CLS_SA_2019.pdf" target="_blank" class="btn_type_a">Scheda Tecnica Estensimetro</a></button>
+					<button id="btn_aux7" class="btn_aux"><a href="MONITORAGGIO/SCHEDE TECNICHE/Scheda tecnica gateway esterno.pdf" target="_blank" class="btn_type_a">Scheda Tecnica Gateway Esterno</a></button>
+					<button id="btn_aux8" class="btn_aux"><a href="MONITORAGGIO/SCHEDE TECNICHE/Tiltmeter-Datasheet-Move-Solutions.pdf" target="_blank" class="btn_type_a">Scheda Tecnica Inclinometro</a></button> 
 				</aside>
 
 
@@ -140,14 +140,14 @@
 					<div id="sensori" class="body_third">
 
 						<div class="foto_container">
-							<img class="sensori" src="img/FOTO DISPOSITIVI/Foto Accelerometro.jpg">
+							<img id="img_sensori" class="immagini_sensori" src="MONITORAGGIO/FOTO/Foto1.PNG">
 						</div>
 
 						<div class="foto_button">
-							<button class="btn_arrows">Back</button>
-							<button class="btn_arrows">Forward</button>
+							<button class="btn_arrows" onclick="back2('img_sensori')">Back</button>
+							<button class="btn_arrows" onclick="forward2('img_sensori')">Forward</button>
 						</div> 
-				</div>
+					</div>
 
 
 
@@ -170,65 +170,10 @@
 			<iframe title="Report Section" id="alert" class="pannello  "   src="https://app.powerbi.com/view?r=eyJrIjoiZWY0NjNhMDgtYWVhMi00M2QwLWI4N2QtMDFjM2NkMWQxZjY1IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 
 		
- 			<!-- 
-						
-			
-
-			
-
-			
-			
-			
-			
-
-			 	 
-
-		
-
-			 
-			
-				
-
-				
-				
-				
-
-				<div id="accelerometro" class="body_third">
-
+ 		
 					
-				</div>
-
-				<div id="nodo" class="body_third">
-
-					
-				</div>
-
-				<div id="estensimetro" class="body_third">
-
-					
-				</div>
-
-				<div id="gateway" class="body_third">
-
-					
-				</div>
-
-				<div id="inclinometro" class="body_third">
-
-					
-				</div>
-						
-					</div>					
-				</div>	
 			
-				
 
-
-
-			</div>
-
-			
-	-->
 
 		</content>
 	</div>
@@ -254,7 +199,7 @@
 			<img id="logo_madrid" src="img/LogoCM.PNG">
 			<img class="img_log" src="img/LogoErasmus.PNG">
 			
-	</div> -->
+	</div> 
 
 	
 	</footer>
