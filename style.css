@@ -212,12 +212,13 @@ h1#TitoloStudente{
 
 }
 .img_loghi{
-	width: 70px;
-	height: 85%;
+	width: 65px;
+	height: 75%;
 	aspect-ratio: 3/1;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	padding: 2px;
 }
 
 .img_log{
@@ -255,8 +256,8 @@ h1#TitoloStudente{
 }
 
 	#ispezione{
-
 	grid-template-columns: 10% 1fr;
+
 
 	}
 
@@ -273,7 +274,8 @@ h1#TitoloStudente{
 	}
 
 	#setup{
-	display: none;
+	grid-template-columns: 10% 1fr;
+
 	}
 
 	#alert{
@@ -281,22 +283,24 @@ h1#TitoloStudente{
 	}
 
 
-#aside2{
-	background: red;
-	width: 100%;
-	height: 100%;
+.aside_secondary{
+	background: skyblue;
+	width: 98%;
+	height: 97%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+
 	}
 
-#body2{
-	background: yellow;
-	width: 100%;
-	height: 100%;
+.body_secondary{
+	background-position: center;
+	width: 95%;
+	height: 98%;
 	margin: 4px;
 	border-radius: 15px;
+
 	}
 
 
@@ -311,14 +315,17 @@ h1#TitoloStudente{
 
 
 #immagini{
-	background: blue;
-	width: 100%;
-	height: 100%;
+	background: skyblue;
+	width: 103%;
+	height: 98%;
 	display: none;
+	border-radius: 15px;
+	margin: 12px;
+
 	}
 
 
-.body2{
+.body_third{
 	display: grid;
 	place-items: center;
 	grid-template-rows: 80% 1fr;
@@ -329,7 +336,6 @@ h1#TitoloStudente{
 .foto_container{
 	width: 100%;
 	height: 100%;
-	background: purple;
 	display: grid;
 	place-items: center;
 
@@ -341,7 +347,6 @@ h1#TitoloStudente{
 .foto_button{
 	width: 100%;
 	height: 100%;
-	background: yellow;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -359,23 +364,68 @@ h1#TitoloStudente{
 
 
 .btn_arrows{
+	height: 30%;
+	background-color: blue;
 	margin: 30px;
 	border-radius: 15px;
+	color: white;
+	font-weight: bolder;
 	}
 
 
+.btn_arrows:hover{
+	background-color: lightblue;
+	color: black;
+	font-weight: bolder;
+
+}
+
+.btn_aux{
+	width: 90%;
+	height: 10%;
+	background-color: blue;
+	border-radius: 15px;
+	color: white;
+	font-weight: bolder;
+
+}
+
+.btn_aux:hover{
+
+	background-color: lightblue;
+	color: black;
+	font-weight: bolder;
+	
+}
 
 
+#body3{
+	background-position: center;
+	width: 95%;
+	height: 98%;
+	margin: 4px;
+	border-radius: 15px;
+
+	}
 
 
+.sensori{
+	width: 650px;
+	height: 450px;
 
 
+	}
 
 
+#sensori{
+	background: skyblue;
+	width: 103%;
+	height: 98%;
+	display: none;
+	border-radius: 15px;
+	margin: 12px;
 
-
-
-
+	}
 
 
 
