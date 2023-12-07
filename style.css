@@ -3,10 +3,16 @@
 	margin:0px;
 }
 
-body{s
+body{
 /*	overflow: hidden;*/
 /**/
 }
+
+embed{
+	margin:0px;
+	padding:0px;
+}
+
 header{
 	width: 100%;
 	height: 10vh;
@@ -255,6 +261,11 @@ h1#TitoloStudente{
 	height: 100%;
 }
 
+.prueba{
+	background: yellow;
+
+}
+
 	#ispezione{
 	grid-template-columns: 10% 1fr;
 
@@ -262,7 +273,7 @@ h1#TitoloStudente{
 	}
 
 	#nuvola{
-	display: none;
+	grid-template-columns: 10% 1fr
 	}
 
 	#architettonico{
@@ -295,7 +306,8 @@ h1#TitoloStudente{
 	}
 
 .body_secondary{
-	background-position: center;
+	display: grid;
+	place-items: center;
 	width: 95%;
 	height: 98%;
 	margin: 4px;
@@ -314,7 +326,7 @@ h1#TitoloStudente{
 	}
 
 
-#immagini{
+#immagini, #immagini2{
 	background: skyblue;
 	width: 103%;
 	height: 98%;
@@ -389,6 +401,13 @@ h1#TitoloStudente{
 	font-weight: bolder;
 
 }
+
+.btn_type_a{
+	text-decoration: none;
+	color:white;
+
+}
+
 
 .btn_aux:hover{
 
