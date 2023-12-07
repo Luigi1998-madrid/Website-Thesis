@@ -370,8 +370,8 @@ h1#TitoloStudente{
 	}
 
 .immagini_ispezione{
-	width: 800px;
-	height: 600px;
+	width: 700px;
+	height: 500px;
 
 
 	}
@@ -384,7 +384,8 @@ h1#TitoloStudente{
 	}
 
 .btn_arrows{
-	height: 30%;
+	width: 10%;
+	height: 50%;
 	background-color: blue;
 	margin: 30px;
 	border-radius: 15px;
@@ -401,8 +402,8 @@ h1#TitoloStudente{
 }
 
 .btn_aux{
-	width: 90%;
-	height: 10%;
+	width: 95%;
+	height: 15%;
 	background-color: blue;
 	border-radius: 15px;
 	color: white;
