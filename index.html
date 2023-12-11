@@ -55,13 +55,24 @@
 
 
 				<aside id="aside2" class="aside_secondary">
-					<button id="btn_aux1" class="btn_aux "><a href="img/ISPEZIONE/Bibliografiaponte.pdf" target="_blank" class="btn_type_a">Structure Description</a></button>
+					<button id="btn_aux1" class="btn_aux " onclick="aprirePDF('pdf_ispezione','object_ispezione',path_ispezione,ispezione_pdf,0)">Structure Description</button>
 					 
 					<button id="btn_aux2" class="btn_aux" onclick="active_aux('immagini')">Bridge Photo Gallery</button>
 				</aside> 
 
 				<div id="body2" class="body_secondary">
 					
+					<div id="pdf_ispezione" class="body_third lector ">
+							<div class="lector_header">
+								<button class="cerrarDocumento">&#10006;</button>
+							</div>
+							<div class="lector_content">
+								<embed id ="object_ispezione" src="" width="100%" height="100%">
+            					
+        						</embed> 							
+							</div>
+					</div>	
+
 					<div id="immagini" class="body_third">
 
 						<div class="foto_container">
@@ -128,15 +139,28 @@
 			
 				<aside id="aside3" class="aside_secondary">
 					 <button id="btn_aux3" class="btn_aux" onclick="active_aux1('sensori')">Sensors</button>
-					<button id="btn_aux4" class="btn_aux"><a href="MONITORAGGIO/SCHEDE TECNICHE/Accelerometer-SHM-Datasheet-Move-Solutions.pdf" target="_blank" class="btn_type_a">Accelerometer Data-Sheet</a></button>
-					<button id="btn_aux5" class="btn_aux"><a href="MONITORAGGIO/SCHEDE TECNICHE/Analog-Node-Datasheet-Move-Solutions.pdf" target="_blank" class="btn_type_a">Analog Comunication Node Data-Sheet</a></button>
-					<button id="btn_aux6" class="btn_aux"><a href="MONITORAGGIO/SCHEDE TECNICHE/Boviar_scheda_Scheda_Estensimetri_Corda_Vibrante_ECV_CLS_SA_2019.pdf" target="_blank" class="btn_type_a">Strain Guage Data-Sheet</a></button>
-					<button id="btn_aux7" class="btn_aux"><a href="MONITORAGGIO/SCHEDE TECNICHE/Scheda tecnica gateway esterno.pdf" target="_blank" class="btn_type_a">External Gateway Data-Sheet</a></button>
-					<button id="btn_aux8" class="btn_aux"><a href="MONITORAGGIO/SCHEDE TECNICHE/Tiltmeter-Datasheet-Move-Solutions.pdf" target="_blank" class="btn_type_a">Tiltmeter Data-Sheet</a></button> 
+					<button id="btn_aux4" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,0)">Accelerometer Data-Sheet</button>
+					<button id="btn_aux5" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,1)">Analog Comunication Node Data-Sheet</button>
+					<button id="btn_aux6" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,2)">Strain Guage Data-Sheet</button>
+					<button id="btn_aux7" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,3)">External Gateway Data-Sheet</button>
+					<button id="btn_aux8" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,4)">Tiltmeter Data-Sheet</button> 
 				</aside>
 
 
 				<div id="body3" class="body_secondary">
+
+					<div id="pdf_setup" class="body_third lector ">
+							<div class="lector_header">
+								<button class="cerrarDocumento">&#10006;</button>
+							</div>
+							<div class="lector_content">
+								<embed id ="object_setup" src="" width="100%" height="100%">
+            					
+        						</embed> 							
+							</div>
+					</div>	
+
+
 					<div id="sensori" class="body_third">
 
 						<div class="foto_container">

@@ -459,6 +459,53 @@ h1#TitoloStudente{
 
 
 
+.lector{
+	width: 100%;
+	height: 100%;
+	background: #999999;
+	grid-template-rows: 5% 1fr;
+}
+
+
+
+.lector_header{
+	width:100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	 
+}
+
+
+.lector_content{
+	width:100%;
+	height: 100%;
+	 
+}
+
+
+.cerrarDocumento {
+    font-size: 20px; /* Tamaño del carácter */
+    font-weight: bold; /* Puedes ajustar según tus preferencias */
+    background: none;
+    border: none;
+    color: #333; /* Color del carácter */
+    cursor: pointer;
+}
+
+.cerrarDocumento:hover {
+    color: #ff0000; /* Color al pasar el mouse sobre el botón */
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

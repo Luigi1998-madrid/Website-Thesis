@@ -1,4 +1,8 @@
+let path_ispezione ="img/ISPEZIONE/"
+const ispezione_pdf = ["Bibliografiaponte.pdf"];
 
+let path_setup ="MONITORAGGIO/SCHEDE TECNICHE/"
+const setup_pdf = ["Accelerometer-SHM-Datasheet-Move-Solutions.pdf", "Analog-Node-Datasheet-Move-Solutions.pdf", "Boviar_scheda_Scheda_Estensimetri_Corda_Vibrante_ECV_CLS_SA_2019.pdf" , "Scheda tecnica gateway esterno.pdf", "Tiltmeter-Datasheet-Move-Solutions.pdf"];
 
 function active_canvas  (ide) {
    
@@ -141,6 +145,67 @@ function forward2(id){
     imagen.src = vector[contatore2];    
 
 }
+
+
+
+function aprirePDF(id1,id2,path,vector,cont){
+    // Firstly we close all elements that have class .body_third
+    const elementos_bodythird = document.querySelectorAll(".body_third");
+    for (var j = 0; j < elementos_bodythird.length; j++) {
+           elementos_bodythird[j].style.display = "none";
+           
+    }
+    // next we open the element with the path
+    const lector = document.getElementById(id1);
+    lector.style.display = "grid"
+
+    
+    const embed = document.getElementById(id2)
+    let path1 = path+vector[cont];
+   
+    
+    embed.src = path1;
+    const anchor =embed.querySelector("a");
+    anchor.href = path1;
+    console.log(vector[cont]);
+    console.log(embed.src)
+    
+}
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener el objeto del visor de PDF
+
+    // var pdfViewer = document.querySelector('#contenedor object');
+    var closeButton = document.querySelector('.cerrarDocumento');
+    const elementos = document.querySelectorAll(".lector");
+    // Verificar si el visor de PDF está presente
+    // if (pdfViewer) {
+    //     // Agregar eventos o funcionalidad adicional aquí
+    //     console.log('Visor de PDF cargado correctamente.');
+    // }
+
+
+    if (closeButton) {
+        // Agregar eventos o funcionalidad adicional aquí
+        
+        // Cerrar el documento PDF al hacer clic en el botón
+        closeButton.addEventListener('click', function() {
+            // pdfViewer.style.display = 'none'; // Oculta el visor de PDF
+        
+        for (var j = 0; j < elementos.length; j++) {
+           elementos[j].style.display = "none";
+
+        }
+        console.log(elementos.length)
+        });
+    }
+});
+
 
 
 
