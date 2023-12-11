@@ -58,7 +58,7 @@ function active_aux2  (ide) {
 }
 
 let contatore = 0;
-const ispezione_img = ["img/ISPEZIONE/FOTO1.jpeg", "img/ISPEZIONE/FOTO2.jpeg", "img/ISPEZIONE/FOTO3.jpeg", "img/ISPEZIONE/FOTO4.jpeg", "img/ISPEZIONE/FOTO5.jpeg", "img/ISPEZIONE/FOTO6.jpeg", "img/ISPEZIONE/FOTO7.jpeg", "img/ISPEZIONE/FOTO8.jpeg", "img/ISPEZIONE/FOTO9.jpeg", "img/ISPEZIONE/FOTO10.jpeg", "img/ISPEZIONE/FOTO11.jpeg"]
+const ispezione_img = ["img/ISPEZIONE/FOTO1.jpeg", "img/ISPEZIONE/FOTO2.jpeg", "img/ISPEZIONE/FOTO5.jpeg", "img/ISPEZIONE/FOTO6.jpeg", "img/ISPEZIONE/FOTO7.jpeg", "img/ISPEZIONE/FOTO8.jpeg", "img/ISPEZIONE/FOTO9.jpeg", "img/ISPEZIONE/FOTO10.jpeg", "img/ISPEZIONE/FOTO11.jpeg"]
 
 function back(id){
     const imagen = document.getElementById(id);
@@ -87,7 +87,7 @@ function forward(id){
 
 
 let contatore1 = 0;
-const nuvola_img = ["NUVOLA DI PUNTI/Nuvola1.jpeg", "NUVOLA DI PUNTI/Nuvola2.jpeg", "NUVOLA DI PUNTI/LaserScanner.png"]
+const nuvola_img = ["NUVOLA DI PUNTI/Nuvola1.jpeg", "NUVOLA DI PUNTI/Nuvola2.jpeg", "NUVOLA DI PUNTI/Laser.jpg"]
 
 function back1(id){
     const imagen = document.getElementById(id);
