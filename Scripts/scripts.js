@@ -1,8 +1,49 @@
 let path_ispezione ="img/ISPEZIONE/"
 const ispezione_pdf = ["Bibliografiaponte.pdf"];
+const ispezione_img = ["FOTO1.jpeg", "FOTO2.jpeg", "FOTO5.jpeg", "FOTO6.jpeg", "FOTO7.jpeg", "FOTO8.jpeg", "FOTO9.jpeg", "FOTO10.jpeg", "FOTO11.jpeg"]
+const ispezione_texto = ["Vista frontale", "Vista laterale","3", "4", "6", "8", "9", "1", "89"];
+
+let path_nuvola ="NUVOLA DI PUNTI/"
+const nuvola_img = ["Nuvola1.jpeg", "Nuvola2.jpeg","Laser.jpg"]
+const nuvola_texto = ["Vista frontale", "Vista laterale","3"];
 
 let path_setup ="MONITORAGGIO/SCHEDE TECNICHE/"
+let pathfoto_setup = "MONITORAGGIO/FOTO/"
+const setup_img = ["ProspettoSud.jpg", "ProspettoNord.jpg", "SezioneRender.jpg"];
 const setup_pdf = ["Accelerometer-SHM-Datasheet-Move-Solutions.pdf", "Analog-Node-Datasheet-Move-Solutions.pdf", "Boviar_scheda_Scheda_Estensimetri_Corda_Vibrante_ECV_CLS_SA_2019.pdf" , "Scheda tecnica gateway esterno.pdf", "Tiltmeter-Datasheet-Move-Solutions.pdf"];
+const setup_texto = ["Vista frontale", "Vista laterale","3"];
+const sensori_img = ["Foto1.PNG", "Foto2.PNG", "Foto3.PNG","Foto4.PNG","Foto5.PNG", "Setup.PNG"];
+const sensori_texto = ["Vista frontale", "Vista laterale","3", "4", "6", "8"];
+
+//function cambiar_sfondo_body_secondary(arg ){
+    //let aux;
+
+    //if (arg === 'body2') {
+       // aux = sfondo_img[0];
+    //} else if (arg === 'body3') {
+        //aux = sfondo_img[1];
+    //} else if (arg === 'body4') {
+        //aux = sfondo_img[2];
+    //}
+
+    //let path_sfondo1 = path_sfondo + aux;
+    //const elemento = document.getElementById(arg);
+     
+    //elemento.style.backgroundImage = 'url('+path_sfondo1+')';
+    //elemento.style.backgroundSize = 'cover';
+//}
+
+function quitar_sfondo_body_secondary(arg ){
+     
+    const content = document.getElementById(arg);
+     
+    content.style.background = 'white';
+     
+}
+
+
+
+
 
 function active_canvas  (ide) {
    
@@ -15,20 +56,28 @@ function active_canvas  (ide) {
     }
     var elemento = document.getElementById(ide);
     elemento.style.display="grid"
-    
+    //cambiar_sfondo_body_secondary(arg)
 }
 
 
-function active_aux  (ide) {
-    var padre = document.getElementById("body2");
+
+function active_aux  (father,ide) {
+    var padre = document.getElementById("father");
     var elementosHijosDiv = padre.children;
 
     for (var i = 0; i < elementosHijosDiv.length; i++) {
            elementosHijosDiv[i].style.display = "none";
            
     }
+
+    const elementos_bodythird = document.querySelectorAll(".body_third");
+    for (var j = 0; j < elementos_bodythird.length; j++) {
+           elementos_bodythird[j].style.display = "none";
+        }
     var elemento = document.getElementById(ide);
     elemento.style.display="grid"
+
+      quitar_sfondo_body_secondary(father)
     
 }
 
@@ -61,90 +110,44 @@ function active_aux2  (ide) {
     
 }
 
-let contatore = 0;
-const ispezione_img = ["img/ISPEZIONE/FOTO1.jpeg", "img/ISPEZIONE/FOTO2.jpeg", "img/ISPEZIONE/FOTO5.jpeg", "img/ISPEZIONE/FOTO6.jpeg", "img/ISPEZIONE/FOTO7.jpeg", "img/ISPEZIONE/FOTO8.jpeg", "img/ISPEZIONE/FOTO9.jpeg", "img/ISPEZIONE/FOTO10.jpeg", "img/ISPEZIONE/FOTO11.jpeg"]
+ let contatore =0;
+function forward(id,path,vector,id2,vector2){
 
-function back(id){
     const imagen = document.getElementById(id);
-    const vector = ispezione_img;
-    contatore -=1;
-    if (contatore<=0) {
-        contatore = vector.length-1;
-        }
-    imagen.src = vector[contatore];    
-
-}
-
-
-
-function forward(id){
-    const imagen = document.getElementById(id);
-    const vector = ispezione_img;
+    const p_text = document.getElementById(id2);
     contatore +=1;
-    if (contatore>= vector.length) {
-        contatore = 0;
-        }
-    imagen.src = vector[contatore];    
+
+    if (contatore >= vector.length) {
+        contatore = 0;  // Reinicia el contador si alcanza el final del array
+    }
+    let path1 = path+vector[contatore];
+    imagen.src = path1;
+    p_text.innerText=vector2[contatore];
 
 }
 
 
 
-let contatore1 = 0;
-const nuvola_img = ["NUVOLA DI PUNTI/Nuvola1.jpeg", "NUVOLA DI PUNTI/Nuvola2.jpeg", "NUVOLA DI PUNTI/Laser.jpg"]
-
-function back1(id){
+function back(id,path,vector,id2,vector2){
     const imagen = document.getElementById(id);
-    const vector = nuvola_img;
-    contatore1 -=1;
-    if (contatore1<=0) {
-        contatore1 = vector.length-1;
-        }
-    imagen.src = vector[contatore1];    
+    const p_text = document.getElementById(id2);
+    
+    contatore -=1;
+    if (contatore <  0) {
+        contatore = vector.length-1;  // Reinicia el contador si alcanza el final del array
+    }
+    let path1 = path+vector[contatore];
+    imagen.src = path1;
+    p_text.innerText=vector2[contatore];
+
+   
 
 }
 
 
 
-function forward1(id){
-    const imagen = document.getElementById(id);
-    const vector = nuvola_img;
-    contatore1 +=1;
-    if (contatore1>= vector.length) {
-        contatore1 = 0;
-        }
-    imagen.src = vector[contatore1];    
-
-}
 
 
-
-let contatore2 = 0;
-const sensori_img = ["MONITORAGGIO/FOTO/Foto1.PNG", "MONITORAGGIO/FOTO/Foto2.PNG", "MONITORAGGIO/FOTO/Foto3.PNG", "MONITORAGGIO/FOTO/Foto4.PNG", "MONITORAGGIO/FOTO/Foto5.PNG"]
-
-function back2(id){
-    const imagen = document.getElementById(id);
-    const vector = sensori_img;
-    contatore2 -=1;
-    if (contatore2<=0) {
-        contatore2 = vector.length-1;
-        }
-    imagen.src = vector[contatore2];    
-
-}
-
-
-
-function forward2(id){
-    const imagen = document.getElementById(id);
-    const vector = sensori_img;
-    contatore2 +=1;
-    if (contatore2>= vector.length) {
-        contatore2 = 0;
-        }
-    imagen.src = vector[contatore2];    
-
-}
 
 
 

@@ -376,6 +376,13 @@ h1#TitoloStudente{
 
 	}
 
+.immagini_setup{
+	width: 1000px;
+	height: 500px;
+
+
+	}
+
 .immagini_sensori{
 	width: 650px;
 	height: 450px;
@@ -408,6 +415,7 @@ h1#TitoloStudente{
 	border-radius: 15px;
 	color: white;
 	font-weight: bolder;
+	margin: 2px;
 
 }
 
@@ -445,7 +453,7 @@ h1#TitoloStudente{
 	}
 
 
-#sensori{
+#sensori, #setup1{
 	background: skyblue;
 	width: 100%;
 	height: 98%;

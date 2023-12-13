@@ -57,7 +57,7 @@
 				<aside id="aside2" class="aside_secondary">
 					<button id="btn_aux1" class="btn_aux " onclick="aprirePDF('pdf_ispezione','object_ispezione',path_ispezione,ispezione_pdf,0)">Structure Description</button>
 					 
-					<button id="btn_aux2" class="btn_aux" onclick="active_aux('immagini')">Bridge Photo Gallery</button>
+					<button id="btn_aux2" class="btn_aux" onclick="active_aux('body2','immagini')">Bridge Photo Gallery</button>
 				</aside> 
 
 				<div id="body2" class="body_secondary">
@@ -75,13 +75,16 @@
 
 					<div id="immagini" class="body_third">
 
-						<div class="foto_container">
-							<img id="img_ispezione" class="immagini_ispezione" src="img/ISPEZIONE/FOTO1.jpeg">
+						<div class="foto_container">						
+								<img id="img_ispezione" class="immagini_ispezione" src="img/ISPEZIONE/FOTO1.jpeg">
+					  			<div class="foto_texto">
+									<p id="ispezione_texto">Typical cross section of presstressed T-beams deck</p>
+								</div>	
 						</div>
 
 						 <div class="foto_button">
-							<button class="btn_arrows" onclick="back('img_ispezione')">Back</button>
-							<button class="btn_arrows" onclick="forward('img_ispezione')">Forward</button>
+							<button class="btn_arrows" onclick="back('img_ispezione', path_ispezione, ispezione_img, 'ispezione_texto', ispezione_texto)">Back</button>
+							<button class="btn_arrows" onclick="forward('img_ispezione', path_ispezione, ispezione_img, 'ispezione_texto', ispezione_texto)">Forward</button>
 						</div> 
  
 					</div>
@@ -109,11 +112,14 @@
 
 								<div class="foto_container">
 									<img id="img_nuvola" class="immagini_nuvola" src="NUVOLA DI PUNTI/Nuvola1.jpeg">
+									<div class="foto_texto">
+									<p id="nuvola_texto">Typical cross section of presstressed T-beams deck</p>
+								</div>
 								</div>
 
 							 	<div class="foto_button">
-									<button class="btn_arrows" onclick="back1('img_nuvola')">Back</button>
-									<button class="btn_arrows" onclick="forward1('img_nuvola')">Forward</button>
+									<button class="btn_arrows" onclick="back('img_nuvola', path_nuvola, nuvola_img, 'nuvola_texto', nuvola_texto)">Back</button>
+									<button class="btn_arrows" onclick="forward('img_nuvola', path_nuvola, nuvola_img, 'nuvola_texto', nuvola_texto)">Forward</button>
 								</div> 
    							</div>
 					</div>  
@@ -138,12 +144,14 @@
 			<div id="setup" class="pannello" >
 			
 				<aside id="aside3" class="aside_secondary">
-					 <button id="btn_aux3" class="btn_aux" onclick="active_aux1('sensori')">Sensors</button>
-					<button id="btn_aux4" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,0)">Accelerometer Data-Sheet</button>
-					<button id="btn_aux5" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,1)">Analog Comunication Node Data-Sheet</button>
-					<button id="btn_aux6" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,2)">Strain Guage Data-Sheet</button>
-					<button id="btn_aux7" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,3)">External Gateway Data-Sheet</button>
-					<button id="btn_aux8" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,4)">Tiltmeter Data-Sheet</button> 
+					 <button id="btn_aux3" class="btn_aux" onclick="active_aux1('setup1')">Setup</button>
+					 <button id="btn_aux4" class="btn_aux" onclick="active_aux1('sensori')">Sensors</button>
+					<button id="btn_aux5" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,0)">Accelerometer Data-Sheet</button>
+					<button id="btn_aux6" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,1)">Analog Comunication Node Data-Sheet</button>
+					<button id="btn_aux7" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,2)">Strain Guage Data-Sheet</button>
+					<button id="btn_aux8" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,3)">External Gateway Data-Sheet</button>
+					<button id="btn_aux9" class="btn_aux" onclick="aprirePDF('pdf_setup','object_setup',path_setup,setup_pdf,4)">Tiltmeter Data-Sheet</button> 
+
 				</aside>
 
 
@@ -160,26 +168,41 @@
 							</div>
 					</div>	
 
+					<div id="setup1" class="body_third">
+
+						<div class="foto_container">
+							<img id="img_setup" class="immagini_setup" src="MONITORAGGIO/FOTO/ProspettoSud.jpg">
+								<div class="foto_texto">
+									<p id="setup_texto">Typical cross section of presstressed T-beams deck</p>
+								</div>
+						</div>
+
+						<div class="foto_button">
+							<button class="btn_arrows" onclick="back('img_setup',pathfoto_setup, setup_img, 'setup_texto', setup_texto)">Back</button>
+							<button class="btn_arrows" onclick="forward('img_setup',pathfoto_setup, setup_img, 'setup_texto', setup_texto)">Forward</button>
+						</div> 
+					</div>
+	
 
 					<div id="sensori" class="body_third">
 
 						<div class="foto_container">
 							<img id="img_sensori" class="immagini_sensori" src="MONITORAGGIO/FOTO/Foto1.PNG">
+								<div class="foto_texto">
+									<p id="sensori_texto">Typical cross section of presstressed T-beams deck</p>
+								</div>
 						</div>
 
+
 						<div class="foto_button">
-							<button class="btn_arrows" onclick="back2('img_sensori')">Back</button>
-							<button class="btn_arrows" onclick="forward2('img_sensori')">Forward</button>
+							<button class="btn_arrows" onclick="back('img_sensori',pathfoto_setup, sensori_img, 'sensori_texto', sensori_texto)">Back</button>
+							<button class="btn_arrows" onclick="forward('img_sensori',pathfoto_setup, sensori_img, 'sensori_texto', sensori_texto)">Forward</button>
 						</div> 
 					</div>
 
 
 
 				</div>
-
-
-
-
 
 
 
