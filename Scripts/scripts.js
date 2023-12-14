@@ -1,19 +1,19 @@
 let path_ispezione ="img/ISPEZIONE/"
 const ispezione_pdf = ["Bibliografiaponte.pdf"];
 const ispezione_img = ["FOTO1.jpeg", "FOTO2.jpeg", "FOTO5.jpeg", "FOTO6.jpeg", "FOTO7.jpeg", "FOTO8.jpeg", "FOTO9.jpeg", "FOTO10.jpeg", "FOTO11.jpeg"]
-const ispezione_texto = ["Vista frontale", "Vista laterale","3", "4", "6", "8", "9", "1", "89"];
+const ispezione_texto = ["View from above", "View from the entrance road ramp","Central longitudinal beams", "Beams and traverses", "View beams deck", "Supports", "Prospectus 1", "Prospectus 2", "View from the side"];
 
 let path_nuvola ="NUVOLA DI PUNTI/"
 const nuvola_img = ["Nuvola1.jpeg", "Nuvola2.jpeg","Laser.jpg"]
-const nuvola_texto = ["Vista frontale", "Vista laterale","3"];
+const nuvola_texto = ["Prospectus 1 cloud of point", "Prospectus 2 cloud of point","LaserScanner"];
 
 let path_setup ="MONITORAGGIO/SCHEDE TECNICHE/"
 let pathfoto_setup = "MONITORAGGIO/FOTO/"
 const setup_img = ["ProspettoSud.jpg", "ProspettoNord.jpg", "SezioneRender.jpg"];
 const setup_pdf = ["Accelerometer-SHM-Datasheet-Move-Solutions.pdf", "Analog-Node-Datasheet-Move-Solutions.pdf", "Boviar_scheda_Scheda_Estensimetri_Corda_Vibrante_ECV_CLS_SA_2019.pdf" , "Scheda tecnica gateway esterno.pdf", "Tiltmeter-Datasheet-Move-Solutions.pdf"];
-const setup_texto = ["Vista frontale", "Vista laterale","3"];
+const setup_texto = ["View of the setup - Prospectus Sud", "View of the setup - Prospectus Nord","View of the setup - Central beam section"];
 const sensori_img = ["Foto1.PNG", "Foto2.PNG", "Foto3.PNG","Foto4.PNG","Foto5.PNG", "Setup.PNG"];
-const sensori_texto = ["Vista frontale", "Vista laterale","3", "4", "6", "8"];
+const sensori_texto = ["Accelerometer Sensor", "Strain Guage Sensor","Tiltmeter Sensor", "", "Analog Node Comunication Device", "Setup LoRaWAN Network"];
 
 //function cambiar_sfondo_body_secondary(arg ){
     //let aux;
@@ -33,9 +33,9 @@ const sensori_texto = ["Vista frontale", "Vista laterale","3", "4", "6", "8"];
     //elemento.style.backgroundSize = 'cover';
 //}
 
-function quitar_sfondo_body_secondary(arg ){
+function quitar_sfondo_content( ){
      
-    const content = document.getElementById(arg);
+    const content = document.getElementById("contnt");
      
     content.style.background = 'white';
      
@@ -54,30 +54,44 @@ function active_canvas  (ide) {
            elementosHijosDiv[i].style.display = "none";
            
     }
+
+    const elementos_bodythird = document.querySelectorAll(".body_third");
+    for (var j = 0; j < elementos_bodythird.length; j++) {
+           elementos_bodythird[j].style.display = "none";
+        }
+
     var elemento = document.getElementById(ide);
     elemento.style.display="grid"
-    //cambiar_sfondo_body_secondary(arg)
+    quitar_sfondo_content( )
 }
 
 
 
 function active_aux  (father,ide) {
-    var padre = document.getElementById("father");
+
+    var padre = document.getElementById(father);
     var elementosHijosDiv = padre.children;
 
     for (var i = 0; i < elementosHijosDiv.length; i++) {
            elementosHijosDiv[i].style.display = "none";
            
     }
-
+    
+    
     const elementos_bodythird = document.querySelectorAll(".body_third");
     for (var j = 0; j < elementos_bodythird.length; j++) {
            elementos_bodythird[j].style.display = "none";
         }
+
     var elemento = document.getElementById(ide);
     elemento.style.display="grid"
+    
+    
 
-      quitar_sfondo_body_secondary(father)
+    quitar_sfondo_content( )
+
+
+
     
 }
 
